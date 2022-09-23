@@ -17,7 +17,7 @@ license = "Apache-2.0/MIT"
 arc-swap = "~1"
 # It's OK to ask for std on log, because pyo3 needs it too.
 log = { version = "~0.4", default-features = false, features = ["std"] }
-pyo3 = { version = "~0.17", default-features = false, features = ["macros"] }
+pyo3 = { git = "https://github.com/pyo3/pyo3", rev = "86ce4d1a1", default-features = false, version = "~0.17", features = ["macros"] }
 
 [dev-dependencies]
-pyo3 = { version = "0.17", features = ["auto-initialize"] }
+pyo3 = { git = "https://github.com/pyo3/pyo3", rev = "86ce4d1a1", version = "0.17", features = ["auto_initialize"] }
